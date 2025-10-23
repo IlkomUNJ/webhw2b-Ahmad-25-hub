@@ -1,0 +1,9 @@
+    /* small polish for image previews */
+    .thumb {
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    /* custom scrollbar for preview area */
+    .preview-scroll::-webkit-scrollbar { height: 8px; }
+    .preview-scroll::-webkit-scrollbar-thumb { background: rgba(16,185,129,0.3); border-radius: 8px; }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @vite('resources/css/comercial.css')
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comercial</title>
+</head>
+<body>
+    <!-- Navbar -->
+    @include('pages/partials/navbar')
+
+    <!-- Video background -->
+    <section id="intro" class="intro">
+      <video autoplay loop muted playsinline class="video-bg">
+        <source src="/resources/assets/footer-video.webm" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="overlay2"></div>
+      <div class="glow-overlay"></div>
+      <div class="overlay3"></div>
+      <h2>Digital Innovation</h2>
+      <h1>Design, Develop, Deliver.</h1>
+      <h3>Clarity Labs creates exceptional digital experiences that transform brands and captivate audiences. We are a strategic partner who brings your vision to life.</h3>
+      <a class="button" href="/login">Log In</a>    
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About us</h2>
+        <p>In a digital world overflowing with complexity, we create clarity. Through code, design, and strategy, we craft solutions that are not only functional, but meaningful, transforming ideas into seamless experiences that connect people and empower businesses.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="head">
+          <h1>Our Services</h1>
+          <a href= "services.html" class="button">Learn more</a>  
+          
+        </div>
+        <div class="content1">
+          <div class="kotak1">
+            <div class="kotak">
+              <div class="video-box">
+                <video src="/resources/assets/Web_design.mp4" autoplay muted loop></video>
+                <div class="penutup"></div>
+              </div>
+              <h2>UI/UX Design</h2>
+            </div>
+          
+            <div class="kotak">
+              <div class="video-box">
+                <video src="/resources/assets/development.mp4" autoplay muted loop></video>
+                <div class="penutup"></div>
+              </div>
+              <h2>Developer</h2>
+            </div>
+          </div>
+        </div>
+        <div class="content2">
+          <div class="kotak2">
+            <div class="kotak">
+              <div class="video-box">
+                <video src="/resources/assets/mobile_application.mp4" autoplay muted loop></video>
+                <div class="penutup"></div>
+              </div>
+              <h2>Mobile Application</h2>
+            </div>
+            <div class="kotak">
+              <div class="video-box">
+                <video src="/resources/assets/video_editing.mp4" autoplay muted loop></video>
+                <div class="penutup"></div>
+              </div>
+              <h2>Video Editing</h2>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+  <div></div>
+  @include('pages/partials/footer')
+</body>
+</html>
