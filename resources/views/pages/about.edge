@@ -1,0 +1,45 @@
+
+@layout.app() 
+@set('title', 'clarity labs')
+
+<body>
+   
+
+    @slot('main')
+
+<main>
+
+
+
+    <section id="intro" class="intro">
+      <video autoplay loop muted playsinline class="video-bg-about">
+        <source src="/resources/assets/hero-video.webm" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="overlay2"></div>
+      <div class="glow-overlay"></div>
+      <div class="overlay3"></div>
+      <h1 class="h3-intro-about">About Us</h1>
+    </section>
+
+    <section id="content-1" class="content-1">
+        <img src="/resources/assets/logo.png" alt="logo-about" class="logo-about">
+        <p>Clarity Labs is a digital agency dedicated to transforming ideas into seamless digital experiences. We believe in <Span class="ascent">clarity over complexity</Span> , creating solutions that <span class="ascent">truly empower businesses and engage users</span></p>
+    </section>
+    <div class="pemisah-back"><div class="pemisah"></div></div>
+    <section id="content-2" class="content-2">
+        <div class="content-2-l">
+          <h2>Our Motto</h2>
+        </div>
+        <div class="content-2-r">
+          <h3>At the heart of our approach lies an ethos that guides us.</h3>
+          <p>From insight to execution, we guide your brand every step of the way to ensure success.</p>
+        </div>
+    </section>
+
+
+</main>
+    @endslot
+
+
+@end
